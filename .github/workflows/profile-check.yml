@@ -1,1 +1,12 @@
+name: Profile Check
 
+on:
+  workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository Health Check
+        run: echo "Repository Active"
